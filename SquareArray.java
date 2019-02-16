@@ -10,13 +10,13 @@ public class SquareArray{
         return A; 
     }
 
-    private static int[] bubbleSortArray(int[] A){
+    private static int[] bubbleSortArray(int[] A){ //this is bubble sort with O(n^2) performance
         int temp = 0; 
         for (int i = 0; i < A.length; i++) { 
             for (int j = 0; j < A.length-i-1; j++) { 
                 if (Math.abs(A[j]) > Math.abs(A[j+1])) 
                 { 
-                    // swap arr[j+1] and arr[i] 
+                    // swap A[j+1] and arr[i] 
                     temp = A[j]; 
                     A[j] = A[j+1]; 
                     A[j+1] = temp; 
