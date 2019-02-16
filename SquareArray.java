@@ -16,7 +16,7 @@ public class SquareArray{
             for (int j = 0; j < A.length-i-1; j++) { 
                 if (Math.abs(A[j]) > Math.abs(A[j+1])) 
                 { 
-                    // swap A[j+1] and arr[i] 
+                    // swap A[j+1] and A[j] 
                     temp = A[j]; 
                     A[j] = A[j+1]; 
                     A[j+1] = temp; 
